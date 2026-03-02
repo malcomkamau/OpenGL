@@ -4,7 +4,9 @@ This repository contains the complete implementation for Assignment 1, covering 
 
 ## Setup and Installation Steps (Part A)
 
-To meet the requirement for a "Short explanation of setup steps" [as specified in Assignment1.pdf](https://placeholder-link-to-your-pdf), the following configuration was performed:
+Detailed documentation of the environment configuration can be found in the root file: **[setup_steps.pdf](./setup_steps.pdf)**.
+
+To meet the requirement for a "Short explanation of setup steps", the following configuration was performed:
 
 1. **Library Selection**: 
    - Utilized **FreeGLUT** as a modern, maintained alternative to the original GLUT library to handle window management and input callbacks.
@@ -31,17 +33,20 @@ The program renders a 2D colored triangle and applies the following dynamic tran
 * **Rotation**: Continuous 360-degree rotation is achieved by incrementing an angle variable within a `glutTimerFunc` loop and applying `glRotatef()`.
 * **Scaling**: A "pulsing" effect is created by dynamically modifying the scale factor with `glScalef()`, increasing and decreasing the size between set boundaries.
 
-## Screenshots
+## Screenshots & Media
 
-### Part A: Colored Triangle Window
-![Colored Triangle Placeholder]
-*(Upload your screenshot of the initial triangle here)*
+### Source Code Implementation (`main.cpp`)
+| Part A: Environment & Setup | Part B: Transformation Logic |
+| :--- | :--- |
+| ![Setup Code](./screenshots/code01.png) | ![Logic Code](./screenshots/code02.png) |
+| *Top section: Includes & Initialization* | *Bottom section: Transformation & Timer Logic* |
 
-### Part B: Dynamic Transformations
-![Transformations Placeholder]
-*(Upload your screenshot showing the triangle mid-rotation/scaling here)*
+### Working Output
+**[Click here to view the Output Recording (MP4)](./screenshots/output_recording.mp4)**
+
+*(Note: If viewing on GitHub, you may need to download the MP4 file to play the video of the transformations in action.)*
 
 ---
-**Author**: [Your Name]  
-**Course**: Computer Graphics / OpenGL Unit  
+**Author**: Rose Maina  
+**Unit**: Computer Graphics  
 **Tools**: Visual Studio 2026, FreeGLUT 3.4.0+
