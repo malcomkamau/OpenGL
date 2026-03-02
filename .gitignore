@@ -1,0 +1,25 @@
+# Visual Studio temporary and build files
+.vs/
+out/
+build/
+x64/
+x86/
+Debug/
+Release/
+*.user
+*.aps
+*.opendb
+*.pdb
+
+# Ignore all executables and DLLs by default to keep repo clean
+*.exe
+*.dll
+
+# --- EXCEPTIONS ---
+# Force-include the DLL needed for the project to run
+!bin/freeglut.dll
+!freeglut.dll
+
+# Force-include the built executable so the 'final build' goes through
+!bin/x64/OpenGL.exe
+!x64/Release/OpenGL.exe
